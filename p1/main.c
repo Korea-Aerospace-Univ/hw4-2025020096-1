@@ -17,7 +17,7 @@ int main(void)
       i++;
     }while(i<5);
     if(i==5)
-        printf("%d",a);
+        printf("%d\n",a);
     
     
     return 0;
