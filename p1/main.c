@@ -1,26 +1,29 @@
 #include <stdio.h>
 
-int main(void)
-{
-    int n,a,c=0;
-    scanf("%d",&n);
-    do{
-       scanf("%d",&a);
-       c++;
-       if (n>a){
-           printf("%d>?\n",n);
-       }
-       else if (n<a){
-           printf("%d<?\n",n);
-       }
-       else{
-           printf("%d==?\n",n);
-       }
-           
-    }while(n!=a);
-    
-    printf("%d\n",c);
-    
-    
+int main(void) {
+    int answer;
+    int guess;
+    int count = 0;
+
+    scanf("%d", &answer);
+
+    do {
+        scanf("%d", &guess);
+        count++;
+
+        if (guess > answer) {
+            printf("%d>?\n", guess);
+        }
+        else if (guess < answer) {
+            printf("%d<?\n", guess);
+        }
+        else {
+            printf("%d==?\n", guess);
+        }
+
+    } while (guess != answer);
+
+    printf("%d\n", count);
+
     return 0;
 }
