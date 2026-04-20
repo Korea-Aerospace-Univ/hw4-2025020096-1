@@ -17,7 +17,7 @@ int main(void)
       i++;
     }while(i<5);
     if(i==5)
-        printf("시도횟수는 5회");
+        printf("%d",a);
     
     
     return 0;
